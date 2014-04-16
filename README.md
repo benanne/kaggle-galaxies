@@ -17,7 +17,7 @@ git clone git://github.com/lisa-lab/pylearn2.git
 
 and add the resulting directory to your `PYTHONPATH`.
 
-**The optional dependencies don't have to be installed to reproduce the winning solution**: the generated data files are already provided, so they don't have to be regenerated (but of course you can if you want to). If you want to install them, please refer to their respective documentation.
+**The optional dependencies listed in the documentation don't have to be installed to reproduce the winning solution**: the generated data files are already provided, so they don't have to be regenerated (but of course you can if you want to). If you want to install them, please refer to their respective documentation.
 
 ### Download the code
 
@@ -83,7 +83,7 @@ The script checks which files are present in `predictions/final/augmented/test/`
 * `predictions/final/blended/blended_predictions.npy.gz`: weighted linear blend.
 * `predictions/final/blended/blended_predictions_separate.npy.gz`: weighted linear blend, with separate weights for each question.
 
-### Convert predictio nfile to CSV
+### Convert prediction file to CSV
 
 Finally, in order to prepare the predictions for submission, the prediction file needs to be converted from `.npy.gz` format to `.csv.gz`. Run the following to do so (or similarly for any other prediction file in `.npy.gz` format):
 
