@@ -94,7 +94,7 @@ Each of the four views was again split into four partially overlapping `parts' o
 \begin{figure}
         \centering
 	\includegraphics[width=0.8\textwidth]{schema_parts.png}
-        \caption{Each view was then split into four partially overlapping \textit{parts}. Each part was rotated so that they are all aligned, with the galaxy in the bottom right corner. In total, 16 parts were extracted from the original image.}\label{fig:schema-views}
+        \caption{Each view was then split into four partially overlapping \textit{parts}. Each part was rotated so that they are all aligned, with the galaxy in the bottom right corner. In total, 16 parts were extracted from the original image.}\label{fig:schema-parts}
 \end{figure}
 
 This results in 16 smaller 45x45 images which appear very similar. They can be expected to have the same topological structure due to rotation invariance, so they can be processed by the same convolutional architecture, which results in a 16x increase in parameter sharing, and thus less overfitting. At the top of the network, the features extracted from these 16 parts are concatenated and connected to one or more dense layers, so the information can be aggregated.
@@ -425,6 +425,8 @@ For parameter extraction with sextractor, I also used the following (all of thes
 \end{itemize}
 
 Note that the training scripts use the cuda-convnet wrappers from pylearn2, which means that \textbf{a recent NVIDIA GPU is required to be able to run them}. They will not run on the CPU, contrary to most Theano code. The scripts should work with cards from the 500 series or upwards, with at least 2GB of memory. I used GTX 680 cards with 2 or 4GB RAM\footnote{If you plan to invest in a GPU, I would recommend getting either a 500 series or a 700 series card. The 600 series cards are known to be less suitable for CUDA applications.}, and version 5.0 of the CUDA toolkit. For the data augmentation to work properly, a quadcore processor and 16GB of CPU RAM is recommended. You may reduce memory usage by reducing the chunk size (10000 by default), but of course you will need to increase the number of chunks accordingly.
+
+I ran all the code on Linux. It should work on any Linux distribution. If you want to run the code on another OS, some modifications might be required.
 
 \section{Generating the solution}
 \label{sec:generating}
