@@ -53,7 +53,6 @@ Copy the train and test images to `/dev/shm` by running:
 
 ```
 python copy_data_to_shm.py
-
 ```
 
 If you don't want to do this, you'll need to modify the `realtime_augmentation.py` file in a few places. Please refer to the documentation for more information.
