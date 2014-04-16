@@ -47,6 +47,17 @@ Download the data files from [Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-gal
 * create `data/pysex_params_extra_*.npy.gz` by running `python extract_pysex_params_extra.py`.
 * create `data/pysex_params_gen2_*.npy.gz` by running `python extract_pysex_params_gen2.py`.
 
+### Copy data to RAM
+
+Copy the train and test images to `/dev/shm` by running:
+
+```
+python copy_data_to_shm.py
+
+```
+
+If you don't want to do this, you'll need to modify the `realtime_augmentation.py` file in a few places. Please refer to the documentation for more information.
+
 ### Train the networks
 
 To train the best single model, run:
