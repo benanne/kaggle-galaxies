@@ -27,7 +27,7 @@ To download the code, run:
 git clone git://github.com/benanne/kaggle-galaxies.git
 ```
 
-A bunch of data files (extracted sextractor parameters, IDs files, training labels in NumPy format, ...) are also included. I decided to include these since generating them is a bit tedious and requires extra dependencies. It's about 17MB in total, so depending on your connection speed it could take a minute. Cloning the repository should also create the necessary directory structure (see `doc/documentation.pdf` for more info).
+A bunch of data files (extracted sextractor parameters, IDs files, training labels in NumPy format, ...) are also included. I decided to include these since generating them is a bit tedious and requires extra dependencies. It's about 20MB in total, so depending on your connection speed it could take a minute. Cloning the repository should also create the necessary directory structure (see `doc/documentation.pdf` for more info).
 
 ### Download the training data
 
