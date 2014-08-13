@@ -34,7 +34,7 @@ A bunch of data files (extracted sextractor parameters, IDs files, training labe
 Download the data files from [Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data). Place and extract the files in the following locations:
 
 * `data/raw/training_solutions_rev1.csv`
-* `data/raw/images_train_rev1/*.jpg`
+* `data/raw/images_training_rev1/*.jpg`
 * `data/raw/images_test_rev1/*.jpg`
 
 ### Create data files
