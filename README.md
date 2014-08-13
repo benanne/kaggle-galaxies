@@ -37,6 +37,8 @@ Download the data files from [Kaggle](http://www.kaggle.com/c/galaxy-zoo-the-gal
 * `data/raw/images_train_rev1/*.jpg`
 * `data/raw/images_test_rev1/*.jpg`
 
+Note that the zip file with the training images is called `images_training_rev1.zip`, but they should go in a directory called `images_train_rev1`. This is just for consistency.
+
 ### Create data files
 
 **This step may be skipped.** The necessary data files have been included in the git repository. Nevertheless, if you wish to regenerate them (or make changes to how they are generated), here's how to do it.
